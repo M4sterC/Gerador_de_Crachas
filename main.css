@@ -213,6 +213,10 @@ footer {
         text-align: center;
     }
 
+    body {
+        overflow-y:auto;
+    }
+
     .container {
         padding: 16px;
     }
@@ -241,6 +245,11 @@ footer {
     form {
         font-size: 16px;
     }
+    
+    body {
+        overflow-y:auto;
+    }
+
 
     header img {
         height: 36px; /* Diminui o tamanho do logo */
