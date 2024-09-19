@@ -37,7 +37,7 @@ form {
     display: flex;
     align-items: center;
     font-size: 22px;
-    max-width: 1366;
+    max-width: 1366px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -58,8 +58,6 @@ form input, button {
     text-decoration: none;
     font-size: 16px;
     border-radius: 6px;
-    position: relative;
-    z-index: 10;
 }
 
 #vizualizar {
@@ -93,6 +91,7 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     scale: 1.2;
+    margin-top: 22px;
 }
 
 .cracha {
@@ -236,7 +235,7 @@ footer {
     }
 
     body {
-        overflow-y:auto;
+        overflow-y:auto; /* Habilita o overflow no eixo y se necessario */
     }
 
     .container {
@@ -269,7 +268,7 @@ footer {
     }
 
     body {
-        overflow-y:auto;
+        overflow-y:auto; /* Habilita o overflow no eixo y se necessario */
     }
 
 
