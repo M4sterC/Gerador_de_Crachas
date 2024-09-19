@@ -198,11 +198,34 @@ footer {
 }
 
 @media print {
-    body * {
-        visibility: hidden;
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        font-family: "Roboto", sans-serif;
     }
-    #vizualizacao * {
-        visibility: visible;
+
+    /* Remove o espaçamento do container principal */
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Garante que a visualização esteja centralizada e no topo */
+    #vizualizacao {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px; /* Adiciona algum espaçamento interno se necessário */
+    }
+
+    /* Remove elementos que não devem aparecer na impressão */
+    header, footer, form {
+        display: none;
     }
 }
 
@@ -245,7 +268,7 @@ footer {
     form {
         font-size: 16px;
     }
-    
+
     body {
         overflow-y:auto;
     }
